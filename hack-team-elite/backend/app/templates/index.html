@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A welcoming space to explore mental-health support.">
+    <title>{{ platform_name }} | A space to feel supported</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/styles.css') }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="{{ platform_name }} home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>{{ platform_name }}</span>
+      </a>
+      <span class="header-note">Your wellbeing matters</span>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="welcome-heading">
+        <p class="eyebrow">A little space for you</p>
+        <h1 id="welcome-heading">You don't have to figure it all out alone.</h1>
+        <p class="intro">
+          Take a breath. SAHARA is a welcoming place to explore support for
+          your mental wellbeing, one step at a time.
+        </p>
+        <a class="primary-link" href="#getting-started">Find your next step</a>
+        <p class="gentle-note">Start wherever you are. There is no rush.</p>
+      </section>
+
+      <section class="support-card" id="getting-started" aria-labelledby="support-heading">
+        <div class="support-icon" aria-hidden="true">✦</div>
+        <div>
+          <h2 id="support-heading">A space to begin</h2>
+          <p>
+            We're building thoughtful tools to help you find support and care
+            for your wellbeing.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Made with care. You deserve support.</p>
+    </footer>
+  </body>
+</html>
